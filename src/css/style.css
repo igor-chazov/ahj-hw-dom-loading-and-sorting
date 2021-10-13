@@ -1,0 +1,39 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  height: 100%; 
+  background-color:rgb(221, 221, 221);
+  font-size: 16px;
+}
+
+#table {
+  border-collapse: collapse;
+  border: 1px solid #000;
+  margin: 50px;
+}
+
+th, td {
+  border: 1px dashed #000;
+  padding: 10px 15px;
+}
+
+th {
+  cursor: pointer;
+}
+
+th:hover {
+  background-color: yellow; 
+}
+
+th.sortUp::after {
+  content: '\2191';
+  padding-left: 3px;
+}
+
+th.sortDown::after {
+  content: '\2193';
+  padding-left: 3px;
+}
